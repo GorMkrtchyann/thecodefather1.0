@@ -1,0 +1,21 @@
+.news-item{
+    display: flex;
+    width: 700px;
+    margin: 5% auto;
+    color: #fff;
+}
+.news-item img{
+    width: 200px;
+    margin-right: 30px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    margin-top: 15%;
+    text-decoration: underline;
+    font-style: italic;
+}
+.news-item b{
+    color: aquamarine;
+    text-decoration: underline;
+}

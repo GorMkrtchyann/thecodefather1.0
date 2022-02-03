@@ -1,0 +1,1156 @@
+@font-face {
+    font-family: 'Quivira';
+    src:url('fonts/Quivira.woff') format('woff'),
+      url('fonts/Quivira.woff2') format('woff2'),
+      url('fonts/Quivira.svg#Quivira') format('svg'),
+      url('fonts/Quivira.eot'),
+      url('fonts/Quivira.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Quivira.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Corleone';
+    src: url('fonts/Corleone.woff2') format('woff2'),
+        url('fonts/Corleone.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 1, 41);
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #008aff, #00ffe7);
+  border-radius: 6px;
+  height: 150px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(#008aff, #00ffe7);
+}
+.body{
+  overflow: hidden;
+}
+
+.videodiv{
+    z-index: -1;
+}
+.oveley{
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+.video{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.mobile-menu{
+  display: none;
+}
+nav{
+    z-index: 1;
+    position: fixed;
+    top: 9%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.logo img{
+    width: 100px;
+    margin-right: 60px;
+}
+.menu i, .menu ul br{
+  display: none;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu ul li{
+    list-style: none;
+    margin-right: 60px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Quivira;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 50px;
+    transition: all 0.4s ease;
+}
+.logo-text{
+  display: none;
+}
+.menu ul li a:hover, .active{
+    text-decoration: underline;
+}
+.menu{
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px 50px 10px 50px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    width: 1200px;
+}
+.menu.sticky{
+    background: rgba(0, 0, 0, 0.9);
+}
+.title{
+    width: 540px;
+    margin-top: 150px;
+    z-index: 3;
+    transform: translate(50%);
+}
+.tt1{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+.h1{
+  font-size: 200px;
+  font-family: Quivira;
+  color: #fff;
+  text-align: center;
+}
+.title-game h1{
+    font-size: 200px;
+    font-family: Quivira;
+    color: #fff;
+    text-align: center;
+}
+.p{
+    color: #fff;
+    text-align: center;
+}
+.tutorials{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 100vh;
+}
+#tut{
+  margin-top: 100px;
+}
+.tit h1{
+    font-family: Quivira;
+    font-size: 100px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 50px;
+}
+.tutorials .html img,.css img, .js img, .bs img{
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 50px;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+.bs img{
+    margin-top: 10px;
+}
+.bs h3{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.tutorials .html, .css, .js, .bs{
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    background: rgba(255, 133, 63, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.65);
+}
+.cr, .qr, .cr1, .qr1, .cr2, .qr2, .cr3, .qr3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(255, 51, 0);
+    box-shadow: 0px 0px 10px 5px rgb(255, 51, 0);
+    filter: blur(10px);
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -20px;
+    z-index: -1;
+}
+.qr, .qr1, .qr2, .qr3{
+    border-radius: 0;
+    margin-top: -400px;
+    margin-left: 200px;
+}
+.cr1, .qr1{
+    background-color: rgb(0, 110, 255);
+    box-shadow: 0px 0px 10px 5px rgb(0, 110, 255);
+}
+.cr2, .qr2{
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0px 0px 10px 5px rgb(255, 123, 0);
+}
+.cr3, .qr3{
+    background-color: rgb(225, 0, 255);
+    box-shadow: 0px 0px 10px 5px rgb(225, 0, 255);
+}
+.cr3{
+    margin-top: -20px;
+}
+.qr3{
+    margin-top: -300px;
+}
+.card2{
+    margin-top: 120px;
+}
+.card3{
+    margin-top: 30px;
+}
+.card4{
+    margin-top: 80px;
+}
+.box{
+    transition:.2s all;
+}
+.tutorials:hover .box{
+    filter:blur(3px);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+  }
+.tutorials:hover .box:hover{
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+/* -------------------------------------news--------------------------------- */
+
+.haight{
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+.news-item{
+  z-index: 1;
+}
+.news-title h1{
+  color: #fff;
+  font-family: Quivira;
+  text-align: center;
+  font-size: 70px;
+  padding: 10px;
+}
+.haight video{
+  opacity: 0.6;
+  filter: blur(3px);
+}
+.news-card{
+  background: #fff;
+  text-align: center;
+  width: 250px;
+  height: 310px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.news-card{
+  transition:.2s all;
+}
+.news-cards:hover .news-card{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.98);
+  box-shadow:none;
+}
+.news-cards:hover .news-card:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+.news-card img{
+  width: 180px;
+}
+.news-card p{
+  width: 240px;
+  font-size: 14px;
+  margin: 5px auto;
+}
+.news-card h3{
+  margin-top: 10px;
+  font-size: 24px;
+}
+.news-card b{
+  color: rgb(0, 1, 41);
+  text-transform: uppercase;
+}
+.news-card .pin{
+  position: absolute;
+  background: rgb(0, 1, 41);
+  color: #fff;
+  width: 25px;
+  height: 49px;
+  margin-left: 5px;
+  border-radius: 0 0 5px 5px;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.2);
+}
+.news-card .pin i{
+  margin-top: 15px;
+}
+.news-cards{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.news-card-2-img img{
+  border-radius: 50%;
+  width: 130px;
+}
+.news-card-3-img i{
+  font-size: 120px;
+  transform: rotateZ(-30deg);
+  margin-top: 15px;
+}
+.news-card-3-paragaraf,.news-card-2-paragaraf{
+  margin-top: 15px;
+}
+.news-cards a{
+  text-decoration: none;
+  color: #000;
+}
+/* -------------------------------------news--------------------------------- */
+.about{
+    background-color: #fff;
+    height: 70vh;
+    position: relative;
+}
+.about img{
+    width: 300px;
+    margin-right: 50px;
+}
+.about .text h1{
+    font-family: Quivira;
+    text-align: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    width: 750px;
+    margin-left: 130px;
+}
+.about .text p{
+    width: 500px;
+}
+.a2{
+    height: 40px;
+    width: 410px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-family: Quivira;
+    letter-spacing: 2px;
+  }
+.a3{
+    height: 100px;
+    width: 410px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    resize: none;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #fff;
+    font-size: 12px;
+    font-family: Quivira;
+    letter-spacing: 2px;
+}
+form .butt{
+    height: 40px;
+    width: 410px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-family: Quivira;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+  }
+form .butt:hover{
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+.icons i{
+    font-size: 30px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+.icons i:hover{
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 0;
+}
+.icons{
+    margin-top: 30px;
+  }
+.info{
+    width: 250px;
+}
+.inputs{
+    width: 410px;
+    position: relative;
+}
+.info p{
+    color: #fff;
+}
+.content-01{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.contact{
+    height: 100vh;
+    position: relative;
+}
+
+.foot img{
+    width: 150px;
+}
+.foot a{
+    color: white;
+    text-decoration: none;
+}
+.foot li{
+    list-style: none;
+    margin-top: 10px;
+}
+.content-02{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0 50px 0;
+}
+.ul{
+    display: flex;
+}
+.ul ul{
+    margin-left: 80px;
+}
+.foot h3{
+    color: white;
+    text-decoration: underline;
+    font-family: Quivira;
+}
+.foot{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.slideshow-container {
+    position: relative;
+    padding-top: 70px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+  }
+
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+
+.img img{
+    border-radius: 50%;
+    width: 250px;
+    border: 4px dotted #FFD700;
+    padding: 5px;
+    transition: 0.2s ease;
+}
+.img img:hover{
+    border: 4px solid;
+}
+
+.text i{
+  color: #1561a3;
+}
+.text b{
+  color: #6115a3;
+}
+
+.code{
+  display: flex;
+  position: absolute;
+  margin-left: 10px;
+}
+.code p{
+  line-height: 20px;
+  width: 10px;
+  overflow-wrap: break-word;
+  margin-right: 20px;
+  color: rgb(0, 1, 41);
+}
+.code1{
+  margin-left: 90%;
+  margin-top: 21.5%;
+}
+.code1 p{
+  color: green;
+}
+.decor i{
+  color: #fff;
+  font-size: 100px;
+  transform: rotateZ(-30deg);
+  margin-top: 110px;
+  transition-delay: 2s;
+}
+.decor i:hover:before{
+  content: '\f095';
+  font-family: fontAwesome;
+  color: #fff;
+  transition-delay: 2s;
+}
+.decor-2 p{
+  font-family: Corleone;
+  color: #fff;
+  font-size: 150px;
+  position: absolute;
+  margin-left: 75%;
+  margin-top: 150px;
+  transform: rotateZ(10deg);
+}
+/* --------------------------------game------------------------- */
+.games{
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.game-2 img{
+  border-radius: 50px;
+}
+.game{
+  height: 100vh;
+  margin-top: -170px;
+  margin-bottom: 130px;
+  position: relative;
+}
+.games img{
+  width: 250px;
+}
+.game-1{
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 70px;
+  box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.27);
+}
+.games .img1{
+  filter: drop-shadow(0 0 0.70rem rgb(0, 0, 0));
+}
+.games .img2{
+  z-index: -1;
+  position: absolute;
+  margin-left: -310px;
+  width: 460px;
+  opacity: 0.5;
+  filter: blur(1px);
+}
+.games h3{
+  color: #fff;
+  text-align: center;
+  text-decoration: underline;
+}
+.games .item{
+  display: flex;
+  margin-top: 60px; 
+}
+.game-1{
+  margin-right: 50px;
+  margin-top: 60px;
+}
+.games .hr{
+  background-color: #fff;
+  width: 5px;
+  height: 550px;
+  transform: rotateZ(20deg);
+  margin: -30px 55px 0px 55px;
+  position: relative;
+}
+
+.games .quiz img{
+  width: 150px;
+}
+.quiz{
+  margin-top: 70px;
+}
+.quiz a{
+  text-decoration: none;
+}
+.quiz-item{
+  position: relative;
+  display: flex;
+  width: 500px;
+}
+.bootquiz img{
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 80px;
+}
+.cssquiz img{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 220px;
+}
+.jsquiz img{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 350px;
+}
+.htmlquiz img{
+  position: absolute;
+}
+.bootquiz img:hover,.htmlquiz img:hover,.jsquiz img:hover,.cssquiz img:hover{
+  width: 160px;
+}
+.title-game h1{
+  font-size: 110px;
+}
+@media (max-width: 768px) {
+    .menu{
+      width: 100%;
+      position: sticky;
+      bottom: 0;
+    }
+    .game{
+      margin-top: 300px;
+    }
+    .game-2{
+      margin-top: 50px;
+    }
+    .menu ul{
+      padding: 0 0 0 30px;
+    }
+    .logo{
+      padding-top: 30px;
+    }
+    .title-game h1{
+      font-size: 100px;
+      margin-bottom: 30px;
+    }
+    #h, #n{
+      display: none;
+    }
+    nav{
+      position: fixed;
+    }
+    .title{
+      margin-left: -200px;
+      display: block;
+    }
+    .content img{
+      display: none;
+    }
+    .about{
+      margin-top: 600px;
+    }
+    .code p{
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    .games .hr{
+      display: none;
+    }
+    .games{
+      margin-left: 15%;
+    }
+    .news{
+      margin-top: 600px;
+      margin-bottom: -550px;
+    }
+  }
+  
+  @media (max-width: 425px){
+    nav{
+      display: none;
+    }
+    .games{
+      flex-wrap: wrap;
+    }
+    .game{
+      margin-top: 150px;
+    }
+    .o{
+      height: 100px;
+    }
+    .game-2{
+      margin-top: 50px;
+    }
+    .logo{
+      padding-top: 30px;
+    }
+    .logo-text{
+      display: block;
+      font-size: 12px;
+      font-family: Quivira;
+      color: #fff;
+    }
+    .title{
+      margin-left: -200px;
+      width: 400px;
+    }
+    .title .h1{
+      font-size: 100px;
+    }
+    .title-game h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+    .about{
+      margin-top: 1000px;
+    }
+    .tit h1{
+        font-size: 70px;
+    }
+    .tutorials .html img,.css img, .js img, .bs img{
+        width: 100px;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    .bs img{
+        margin-top: 10px;
+    }
+    .bs h3{
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    .tutorials .html, .css, .js, .bs{
+        width: 180px;
+        height: 220px;
+        border-radius: 20px;
+    }
+    .cr, .qr, .cr1, .qr1, .cr2, .qr2, .cr3, .qr3{
+        width: 120px;
+        height: 120px;
+        margin-top: -50px;
+        margin-left: -20px;
+    }
+  
+    .about .text p{
+        width: 300px;
+        font-size: 13px;
+    }
+    .content{
+        margin-left: 55px;
+    }
+    .code p{
+      display: none;
+    }
+    .content-01{
+      flex-direction: column-reverse;
+    }
+    .contact{
+      margin-top: 170px;
+    }
+    .decor i{
+      margin-top: -50px;
+    }
+    .decor-2{
+      margin-top: 190px;
+    }
+    .info{
+      margin-left: 80px;
+      margin-top: 30px;
+    }
+    .foot{
+      display: none;
+    }
+    .title-game h1{
+      font-size: 70px;
+    }
+    .default .item{
+      flex-wrap: wrap;
+      width: 300px;
+      margin-top: -30px;
+    }
+    .default .item .game-1{
+      margin-left: 30px;
+    }
+    .default .item .game-2{
+      margin-left: 60px;
+    }
+    .quiz .quiz-item{
+      flex-wrap: wrap;
+      width: 300px;
+    }
+    .htmlquiz img,.bootquiz img,.cssquiz img,.jsquiz img{
+      position: relative;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    .bootquiz img,.jsquiz img{
+      margin-top: 50px;
+    }
+    .news{
+      margin-top: 950px;
+      margin-bottom: -950px;
+    }
+    .news-card img, .news-card-3-img i, .news-card .pin{
+      display: none;
+    }
+    .news-card{
+      height: 80px;
+      width: 350px;
+    }
+    .news-cards{
+      flex-wrap: wrap;
+    }
+    .news-card-2,.news-card-3{
+      margin-top: 20px;
+    }
+    .news-cards h3{
+      font-size: 15px;
+      text-decoration: underline;
+    }
+    .news-cards b{
+      display: none;
+    }
+    .news-cards p{
+      margin-top: -5px;
+    }
+    .news-title h1{
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 375px){
+    .h1{
+        font-size: 100px;
+        font-family: Quivira;
+        color: #fff;
+        margin-left: 20px;
+    }
+    .title{
+      margin-left: -150px;
+      width: 320px;
+    }
+    .title .p{
+      font-size: 12px;
+    }
+    .tit h1{
+        font-size: 60px;
+    }
+    .tutorials .html img,.css img, .js img, .bs img{
+        width: 80px;
+        margin-left: 35px;
+        margin-top: 40px;
+    }
+    .bs img{
+        margin-top: 10px;
+    }
+    .bs h3{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .tutorials .html, .css, .js, .bs{
+        width: 150px;
+        height: 190px;
+        border-radius: 20px;
+    }
+    .cr, .qr, .cr1, .qr1, .cr2, .qr2, .cr3, .qr3{
+        width: 120px;
+        height: 120px;
+        margin-top: -50px;
+        margin-left: -20px;
+    }
+    .about .text p{
+        width: 250px;
+        font-size: 12px;
+    }
+    .about .text h1{
+        font-size: 20px;
+    }
+    .content{
+        margin-left: 55px;
+    }
+    .code p{
+      display: none;
+    }
+    .content-01{
+      flex-direction: column-reverse;
+    }
+    .contact{
+      margin-top: 170px;
+    }
+    .decor i{
+      margin-top: -50px;
+    }
+    .decor-2{
+      margin-top: 190px;
+    }
+    .info{
+      margin-left: 80px;
+      margin-top: 30px;
+    }
+    .a2{
+        height: 40px;
+        width: 300px;
+        margin-bottom: 15px;
+      }
+    .a3{
+        height: 100px;
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    form .butt{
+        height: 40px;
+        width: 300px;
+      }
+    form{
+      margin-left: 110px;
+    }
+    .title-game h1{
+      font-size: 60px;
+    }
+    .default .item{
+      width: 250px;
+      margin-top: -30px;
+    }
+    .default .item .game-1{
+      margin-left: 0;
+    }
+    .default .item .game-2{
+      margin-left: 30px;
+    }
+    .quiz .quiz-item{
+      flex-wrap: wrap;
+      width: 300px;
+      margin-left: -25px;
+    }
+  }
+  @media (max-width: 320px){
+    .title .h1{
+        font-size: 80px;
+        margin-left: 20px;
+    }
+    .title{
+      margin-left: -120px;
+      width: 270px;
+      margin-top: 200px;
+    }
+    .title .p{
+      font-size: 12px;
+    }
+    .tit h1{
+        font-size: 50px;
+    }
+    .tutorials .html img,.css img, .js img, .bs img{
+        width: 60px;
+        margin-left: 30px;
+        margin-top: 35px;
+    }
+    .bs img{
+        margin-top: 10px;
+    }
+    .bs h3{
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .tutorials .html, .css, .js, .bs{
+        width: 120px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    .cr, .qr, .cr1, .qr1, .cr2, .qr2, .cr3, .qr3{
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+        margin-left: -20px;
+    }
+    .card2{
+        margin-top: 120px;
+    }
+    .card3{
+        margin-top: -10px;
+    }
+    .card4{
+        margin-top: 80px;
+    }
+    .title-game h1{
+      font-size: 50px;
+    }
+    .about .text p{
+        width: 200px;
+        font-size: 11px;
+    }
+    .about .text h1{
+        font-size: 17px;
+    }
+    .content{
+        margin-left: 55px;
+    }
+    .code p{
+      display: none;
+    }
+    .content-01{
+      flex-direction: column-reverse;
+    }
+    .contact{
+      margin-top: 170px;
+    }
+    .decor i{
+      margin-top: -50px;
+    }
+    .decor-2{
+      margin-top: 190px;
+    }
+    .game-2 img{
+      border-radius: 50px;
+    }
+    .game{
+      height: 70vh;
+      margin-top: -50px;
+      margin-bottom: 130px;
+    }
+    .games img{
+      width: 230px;
+    }
+    .game-1{
+      width: 230px;
+      border-radius: 50px;
+    }
+    .games .img2{
+      margin-left: -210px;
+      width: 330px;
+    }
+    .about{
+      margin-top: 1200px;
+    }
+    .info{
+      margin-left: 80px;
+      margin-top: 30px;
+    }
+    .a2{
+        height: 40px;
+        width: 300px;
+        margin-bottom: 15px;
+      }
+    .a3{
+        height: 100px;
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    form .butt{
+        height: 40px;
+        width: 300px;
+      }
+    form{
+      margin-left: 110px;
+    }
+    .title-game h1{
+      font-size: 70px;
+    }
+    .default .item{
+      flex-wrap: wrap;
+      width: 200px;
+      margin-top: -30px;
+    }
+    .default .item .game-1{
+      margin-left: -20px;
+    }
+    .default .item .game-2{
+      margin-left: 5px;
+    }
+    .quiz .quiz-item{
+      margin-left: -50px;
+    }
+    .quiz h3{
+      margin-left: -30px;
+    }
+    .news{
+      margin-top: 1100px;
+      margin-bottom: -1150px;
+    }
+    .news-card{
+      height: 80px;
+      width: 300px;
+    }
+    .news-title h1{
+      font-size: 35px;
+    }
+  }
+  

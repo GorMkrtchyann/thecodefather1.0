@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="htmlstyle.css">
+    <link rel="icon" href="img/logos/logowhite.png">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <title>The Codefather</title>
+</head>
+<body>
+  <div class="body">
+        <!-- <nav>
+            <div class="menu">
+                <ul>
+                    <li class=""><a href="#home">
+                      <i style="margin-left: 16px;" class="fa fa-home"></i> <br>
+                      Գլխավոր</a></li>
+                    <li class=""><a href="#tut">
+                      <i style="margin-left: 7px;" class="fa fa-code"></i><br>
+                      Դասեր</a></li>
+                    <div class="logo">
+                        <img src="img/logos/logowhite.png" alt="logo">
+                    </div>
+                    <li class=""><a href="#ab">
+                      <i style="margin-left: 6px;" class="fa fa-address-card-o"></i><br>
+                      Մասին</a></li>
+                    <li class=""><a href="#cont">
+                      <i style="margin-left: 4px;" class="fa fa-phone"></i><br>
+                      Կապ</a></li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <div class="home-button">
+            <a href="index.html">
+                <i style="margin-left: 16px;" class="fa fa-home"></i>
+            </a>
+        </div>
+        <div class="bode">
+
+        <div class="html-menu">
+            <ul class="html-ul">
+                <h3>HTML</h3>
+                <li class="links"><a href="#t1">HTML-ի Կառուցվածքը</a></li>
+                <li class="links"><a href="#t2">HTML Հիմնական</a></li>
+                <li class="links"><a href="#t3">HTML Ատրիբուտներ</a></li>
+                <li class="links"><a href="#t4">HTML Վերնագրեր</a></li>
+                <li class="links"><a href="#t5">HTML Պարագրաֆ</a></li>
+                <li class="links"><a href="#t6">HTML  </a></li>
+            </ul>
+        </div>
+
+            <div class="html-c1">
+            <section id="t1">
+            <div class="container">
+                
+                <div class="title">
+                    <h1>HTML-ի Կառուցվածքը</h1>
+                </div>
+                <div class="content-c1">
+                    <div class="hr">
+                        <hr>
+                        <p>HTML-ը վեբ էջեր ստեղծելու ստանդարտ կմախքային լեզու է:</p>
+                        <hr>
+                    </div>
+                    <div class="what-html">
+                        <h2>Ի՞նչ է HTML-ը</h2>
+                        <ul>
+                            <li>HTML-ը նշանակում է Hyper Text Markup Language</li>
+                            <li>HTML-ը վեբ էջեր ստեղծելու ստանդարտ նշագրման լեզու է</li>
+                            <li>HTML-ը նկարագրում է վեբ էջի կառուցվածքը</li>
+                            <li>HTML-ը բաղկացած է մի շարք տարրերից</li>
+                            <li>HTML տարրերը պիտակավորում են բովանդակության այնպիսի հատվածներ,<br> ինչպիսիք են «սա վերնագիր է», «սա պարբերություն է», «սա հղում է» և այլն:</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <hr style="color: #fff;">
+                    <div class="html-doc">
+                        <h2>Պարզ HTML փաստաթուղթ</h2>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span><</span>!DOCTYPE <a style="color: red;">html</a><span>></span><br>
+                                    <span><</span>html<span>></span><br>
+                                    <span><</span>head<span>></span><br>
+                                    <span><</span>title<span>></span><a style="color: #000;">Page Title</a><span><</span>/title<span>></span><br>
+                                    <span><</span>/head<span>></span><br>
+                                    <span><</span>body<span>></span><br>
+                                    <br>
+                                    <span><</span>h1<span>></span><a style="color: #000;">My First Heading</a><span><</span>/h1<span>></span><br>
+                                    <span><</span>p<span>></span><a style="color: #000;">My first paragraph.</a><span><</span>/p<span>></span><br>
+                                    <br>
+                                    <span><</span>/body<span>></span><br>
+                                    <span><</span>/html<span>></span><br>
+                                </p>
+                            </div>
+                            <a href="codetutu/ex1.html" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <div class="html-end">
+                            <h2>Բացատրված օրինակը</h2>
+                            <ul>
+                                <li><a style="color: rgb(0, 1, 41);"><span><</span>!DOCTYPE html<span>></span></a> հռչակագիրը սահմանում է, որ այս փաստաթուղթը HTML5 փաստաթուղթ է</li>
+                                <li><a style="color: rgb(0, 1, 41);"><span><</span>html<span>></span></a> տարրը HTML էջի արմատային տարրն է</li>
+                                <li><a style="color: rgb(0, 1, 41);"><span><</span>head<span>></span></a> տարրը պարունակում է մետա տեղեկատվություն HTML էջի մասին</li>
+                                <li><a style="color: rgb(0, 1, 41);"><span><</span>title<span>></span></a> տարրը նշում է վերնագիր HTML էջի համար (որը ցուցադրվում է դիտարկիչի <br>վերնագրի տողում կամ էջի ներդիրում)</li>
+                                <li><a style="color: rgb(0, 1, 41);"><span><</span>body<span>></span></a> տարրը սահմանում է փաստաթղթի մարմինը և հանդիսանում է բոլոր տեսանելի <br>
+                                    բովանդակության կոնտեյներ, ինչպիսիք են վերնագրերը, պարբերությունները, պատկերները,<br> հիպերհղումները, աղյուսակները, ցուցակները և այլն:</li>
+                                <li><a style="color: rgb(0, 1, 41);"><span><</span>h1<span>></span></a> տարրը սահմանում է մեծ վերնագիր</li>
+                                <li><a style="color: rgb(0, 1, 41);"><span><</span>p<span>></span></a> տարրը սահմանում է պարբերություն</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <hr style="color: #fff;">
+
+                    <div class="html-el">
+                        <h2>Ի՞նչ է HTML տարրը:</h2>
+                        <div class="html-top">
+                            <p>HTML տարրը սահմանվում է սկզբնական մեկ հատանի չակերտով, որոշ բովանդակությամբ և ավարտի մեկ հատանի չակերտով.</p>
+                            <br>
+                            <p style="font-size: 25px; margin-left: 25px;"><span><</span><a style="color: red;">tagname</a><span>></span>Բովանդակությունը գտնվում է այստեղ...<span><</span><a style="color: red;">/tagname</a><span>></span></p>
+                            <br>
+                            <p>HTML տարրը ամեն ինչ է՝ սկզբի թեգից մինչև վերջ:</p>
+                            <br>
+                            <p style="font-size: 25px; margin-left: 25px;"><span><</span><a style="color: red;">h1</a><span>></span><a>Վենագիր</a><span><</span><a style="color: red;">/h1</a><span>></span></p>
+                            <br>
+                            <p style="font-size: 25px; margin-left: 25px;"><span><</span><a style="color: red;">p</a><span>></span><a>Պարագրաֆ</a><span><</span><a style="color: red;">/p</a><span>></span></p>
+                        </div>
+                        <div class="html-tab">
+                            <table>
+                                <tr>
+                                  <th style="border-left: 1px solid #dddddd;">Թեգի սկզբը</th>
+                                  <th>Տարրի բովանդակությունը</th>
+                                  <th style="border-right: 1px solid #dddddd;">Թեգի վերջը</th>
+                                </tr>
+                                <tr>
+                                  <td style="border-left: 1px solid #dddddd;"><span><</span><a>h1</a><span>></span></td>
+                                  <td>Վենագիր</td>
+                                  <td style="border-right: 1px solid #dddddd;"><span><</span><a>/h1</a><span>></span></td>
+                                </tr>
+                                <tr>
+                                  <td style="border-left: 1px solid #dddddd;"><span><</span><a>p</a><span>></span></td>
+                                  <td>Պարագրաֆ</td>
+                                  <td style="border-right: 1px solid #dddddd;"><span><</span><a>/p</a><span>></span></td>
+                                </tr>
+                                <tr>
+                                    <td style="border-left: 1px solid #dddddd;"><span><</span><a>br</a><span>></span></td>
+                                    <td>չունի</td>
+                                    <td style="border-right: 1px solid #dddddd;">չունի</td>
+                                  </tr>
+                              </table>
+                        </div>
+                        <div class="note">
+                            <p><b>Նշում:</b> որոշ HTML տարրեր չունեն բովանդակություն (ինչպես <span><</span>br<span>></span> տարրը): Այս տարրերը կոչվում են դատարկ տարրեր: Դատարկ տարրերը վերջի թեգ չունեն:</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr style="color: #fff;">
+                    <br>
+                    <hr style="color: #fff;">
+
+                    <div class="html-web">
+                        <h2>Վեբ բրաուզերներ</h2>
+                        
+                        <p>Վեբ բրաուզերի (Chrome, Edge, Firefox, Safari) նպատակը HTML փաստաթղթերը կարդալն ու դրանք ճիշտ ցուցադրելն է։</p>
+                        <p style="margin-bottom: 40px;">Բրաուզերը չի ցուցադրում HTML թեգերը, այլ օգտագործում է դրանք՝ որոշելու, թե ինչպես ցուցադրել փաստաթուղթը.</p>
+
+                        <img src="img/html/img_chrome.png" alt="">
+                    </div>
+                    <br>
+                    <hr style="color: #fff;">
+                    <div class="html-web">
+                        <h2>HTML էջի կառուցվածքը</h2>
+                        
+                        <p style="margin-bottom: 40px;">Ստորև ներկայացված է HTML էջի կառուցվածքը։</p>
+
+                        <img style="border: 1px solid #000" src="img/html/struct.PNG" alt="">
+                        <div class="note">
+                            <p style="color: black;"><b>Նշում:</b> <span><</span>body<span>></span> բաժնի բովանդակությունը (վերևի սպիտակ տարածքը) կցուցադրվի բրաուզերում: <span><</span>title<span>></span> տարրի բովանդակությունը կցուցադրվի բրաուզերի վերնագրի տողում կամ էջի ներդիրում:</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr style="color: #fff; border: 3px solid #fff;">
+                </div>
+            </section>
+        
+            <section id="t2" class="html-basic">
+                <div class="container">
+                    <h1>HTML հիմնական օրինակներ</h1>
+                    <br>
+                    <hr style="color: #fff;">
+                    <p>Այս գլխում մենք ցույց կտանք մի քանի հիմնական HTML օրինակներ:</p>
+                    <p>Մի անհանգստացեք, եթե մենք օգտագործում ենք թեգեր, որոնց մասին դեռ չեք իմացել:</p>
+                    <hr style="color: #fff;">
+
+                    <div class="html-doctype">
+                        <h2><span><</span>!DOCTYPE<span>></span> հռչակագիր</h2>
+                        <p style="margin-top: 20px;"><span><</span>!DOCTYPE<span>></span> հայտարարությունը ներկայացնում է փաստաթղթի տեսակը և օգնում դիտարկիչներին ճիշտ ցուցադրել վեբ էջերը:</p>
+                        <p style="margin-top: 20px;">Այն պետք է հայտնվի միայն մեկ անգամ՝ էջի վերևում (մինչև HTML թեգը):</p>
+                        <p style="margin-top: 20px;">HTML5-ի <span><</span>!DOCTYPE<span>></span> հռչակագիրը</p>
+
+                        <div style="padding-bottom: 5px; padding-top: 20px;" class="html-back">
+                            <div class="code-doc">
+                                <p>
+                                    <span><</span>!DOCTYPE <a style="color: red;">html</a><span>></span><br>
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                    <hr style="color: #fff;">
+                    </div>
+                    <div class="html-headind">
+                        <h2>HTML վերնագրեր</h2>
+
+                        <p style="margin-top: 20px;">HTML վերնագրերը սահմանվում են <span><</span><a>h1</a><span>></span>-ից <span><</span><a>h6</a><span>></span> թեգերով:</p>
+                        <p style="margin-top: 20px;"><span><</span><a>h1</a><span>></span> սահմանում է ամենակարևոր վերնագիրը: <span><</span><a>h6</a><span>></span> սահմանում է ամենաքիչ կարևոր վերնագիրը.</p>
+                    
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span><</span>h1<span>></span><a style="color: #000;">My First Heading</a><span><</span>/h1<span>></span><br>
+                                    <span><</span>h2<span>></span><a style="color: #000;">My first paragraph.</a><span><</span>/h2<span>></span><br>
+                                    <span><</span>h3<span>></span><a style="color: #000;">My first paragraph.</a><span><</span>/h3<span>></span><br>
+                                </p>
+                            </div>
+                            <a href="codetutu/ex2.html" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                    </div>
+                    <br>
+                    <hr style="color: #fff;">
+                    <br>
+                    <hr style="color: #fff;">
+                    <div class="html-headind">
+                        <h2>HTML պարբերություններ</h2>
+
+                        <p style="margin-top: 20px;">HTML պարբերությունները սահմանվում են <span><</span>p<span>></span> թեգով:</p>
+                    
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span><</span>p<span>></span><a style="color: #000;">My First Heading</a><span><</span>/p<span>></span><br>
+                                    <span><</span>p<span>></span><a style="color: #000;">My first paragraph.</a><span><</span>/p<span>></span><br>
+                                </p>
+                            </div>
+                            <a href="codetutu/ex3.html" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                    </div>
+                    <br>
+                    <hr style="color: #fff;">
+                    <div class="html-headind">
+                        <h2>HTML հղումներ</h2>
+
+                        <p style="margin-top: 20px;">HTML հղումները սահմանվում են <span><</span>a<span>></span> թեգով.</p>
+                    
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span><</span>a <a style="color: blueviolet;">href</a>
+                                    <a style="color: darkgreen;">="https://www.youtube.com"</a>
+                                    <span>></span><a style="color: #000;">This is a link</a><span><</span>/a<span>></span>
+                                </p>
+                            </div>
+                            <a href="codetutu/ex4.html" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+
+                        <p style="margin-top: 20px;">Հղման նպատակակետը նշված է href ատրիբուտով:</p>
+                        <p>Ատրիբուտները օգտագործվում են HTML տարրերի մասին լրացուցիչ տեղեկություններ տրամադրելու համար:</p>
+                        <p>Ատրիբուտների մասին ավելին կիմանաք հաջորդ գլխում:</p>
+                    </div>
+                    <hr style="color: #fff;">
+                    <div class="html-headind">
+                        <h2>HTML նկարներ</h2>
+
+                        <p style="margin-top: 20px;">HTML պատկերները սահմանվում են <span><</span>img> թեգով:</p>
+                        <p>Աղբյուրի ֆայլը (src), նկարագրման տեքստը (alt), width և height տրամադրվում են որպես ատրիբուտներ.</p>
+                    
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span><</span>img <a style="color: darkmagenta;">src</a><a style="color: darkgreen;">="logoblack.png"</a>  
+                                    <a style="color: darkmagenta;">alt</a><a style="color: darkgreen;">="TheCodefather.com"</a>
+                                    <a style="color: darkmagenta;">width</a><a style="color: darkgreen;">="104"</a> 
+                                    <a style="color: darkmagenta;">height</a><a style="color: darkgreen;">="142"</a><span>></span>
+                                </p>
+                            </div>
+                            <a href="codetutu/ex5.html" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                    </div>
+                    <br>
+                    <hr style="color: #fff; border: 3px solid #fff;">
+                </div>
+                </section>
+
+                <section id="t3" class="html-atri">
+                    <div class="container">
+                        <h1>HTML ատրիբուտներ</h1>
+                        <br>
+                        <hr style="color: #fff;">
+                        <p>HTML ատրիբուտները լրացուցիչ տեղեկություններ են տալիս HTML տարրերի մասին:</p>
+                        <hr style="color: #fff;">
+
+                        <div class="html-atributs">
+                            <ul>
+                                <h2 style="margin-bottom: 20px;">HTML ատրիբուտներ</h2>
+                                <li>Բոլոր HTML տարրերը կարող են ունենալ ատրիբուտներ</li>
+                                <li>Ատրիբուտները միշտ նշվում են սկզբնական թեգում</li>
+                                <li>Ատրիբուտները սովորաբար գրվում են անուն/արժեք զույգ չակերտներով, ինչպիսիք են՝ name="արժեքը"</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <hr style="color: #fff;">
+                        <div class="html-headind">
+                            <h2>Հղումների ատրիբուտներ</h2>
+    
+                            <p style="margin-top: 20px;">HTML հղումները սահմանվում են <span><</span>a<span>></span> թեգով.</p>
+                        
+                            <div class="html-back">
+                                <h3>ՕՐԻՆԱԿ</h3>
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>a <a style="color: blueviolet;">href</a>
+                                        <a style="color: darkgreen;">="https://www.youtube.com"</a>
+                                        <span>></span><a style="color: #000;">This is a link</a><span><</span>/a<span>></span>
+                                    </p>
+                                </div>
+                                <a href="codetutu/ex4.html" target="_blank">
+                                    <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                                </a> 
+                            </div>
+    
+                            <p style="margin-top: 20px;">Հղման նպատակակետը նշված է href ատրիբուտով:</p>
+                            <p>Ատրիբուտները օգտագործվում են HTML տարրերի մասին լրացուցիչ տեղեկություններ տրամադրելու համար:</p>
+                        </div>
+                        <hr style="color: #fff;">
+                        <div class="html-headind">
+                            <h2>Նկարների ատրիբուտներ</h2>
+    
+                            <p style="margin-top: 20px;">HTML պատկերները սահմանվում են <span><</span>img> թեգով:</p>
+                            <p>Աղբյուրի ֆայլը (src), նկարագրման տեքստը (alt), width և height տրամադրվում են որպես ատրիբուտներ.</p>
+                        
+                            <div class="html-back">
+                                <h3>ՕՐԻՆԱԿ</h3>
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>img <a style="color: darkmagenta;">src</a><a style="color: darkgreen;">="logoblack.png"</a>  
+                                        <a style="color: darkmagenta;">alt</a><a style="color: darkgreen;">="TheCodefather.com"</a>
+                                        <a style="color: darkmagenta;">width</a><a style="color: darkgreen;">="104"</a> 
+                                        <a style="color: darkmagenta;">height</a><a style="color: darkgreen;">="142"</a><span>></span>
+                                    </p>
+                                </div>
+                                <a href="codetutu/ex5.html" target="_blank">
+                                    <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                                </a> 
+                            </div>
+                        </div>
+                        <br>
+                        <hr style="color: #fff;">
+                        <div class="html-style">
+                            <h2>Ոճի ատրիբուտ</h2>
+                            <p style="margin-top: 20px;">Style ատրիբուտ օգտագործվում է տարրին ոճեր ավելացնելու համար, ինչպիսիք են գույնը, տառատեսակը, չափը և այլն:</p>
+                            <div class="html-back">
+                                <h3>ՕՐԻՆԱԿ</h3>
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>p 
+                                        <a style="color: darkmagenta;">style</a><a style="color: darkgreen;">="color: blue;"</a>
+                                        <span>></span><a style="color: #000;">Սա կապույտ պարագրաֆ է։</a>
+                                        <span><</span>/p<span>></span>
+                                    </p>
+                                </div>
+                                <a href="codetutu/ex6.html" target="_blank">
+                                    <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                                </a> 
+                            </div>
+                        </div>
+                        <br>
+                        <hr style="color: #fff;">
+                        <div class="html-leng">
+                            <h2>Leng ատրիբուտ</h2>
+                            <br>
+                            <p>Դուք միշտ պետք է ներառեք lang ատրիբուտը <span><</span>html<span>></span> թեգի ներսում՝ վեբ էջի լեզուն հայտարարելու համար: 
+                                Սա նախատեսված է օգնելու որոնման համակարգերին և բրաուզերներին:</p>
+                            <br>
+                            <p>Հետևյալ օրինակը նշում է անգլերենը որպես լեզու:</p>
+
+                            <div style="padding-bottom: 5px; padding-top: 20px;" class="html-back">
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>!DOCTYPE <a style="color: red;">html</a><span>></span><br>
+                                        <span><</span>html lang<a style="color: red;">="en"</a><span>></span><br>
+                                        <span><</span>body<span>></span><br>
+                                        ...<br>
+                                        <span><</span>/body<span>></span><br>
+                                        <span><</span>/html<span>></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                            <p>Երկրի կոդերը կարող են նաև ավելացվել լեզվի կոդի մեջ lang ատրիբուտում: Այսպիսով, առաջին երկու նիշերը
+                                 սահմանում են HTML էջի լեզուն, իսկ վերջին երկու նիշերը՝ երկիրը:</p>
+                            <br> 
+                            <p>Հետևյալ օրինակը նշում է անգլերենը որպես լեզու և Միացյալ Նահանգները որպես երկիր.</p>
+                                
+                            <div style="padding-bottom: 5px; padding-top: 20px;" class="html-back">
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>!DOCTYPE <a style="color: red;">html</a><span>></span><br>
+                                        <span><</span>html lang<a style="color: red;">="en-US"</a><span>></span><br>
+                                        <span><</span>body<span>></span><br>
+                                        ...<br>
+                                        <span><</span>/body<span>></span><br>
+                                        <span><</span>/html<span>></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr style="color: #fff;">
+                        <div class="html-title">
+                            <h2>Վերանգրի ատրիբուտ</h2>
+                            <br>
+                            <p>Վերնագրի ատրիբուտը սահմանում է որոշ լրացուցիչ տեղեկություններ թեգի մասին:</p>
+                            <br>
+                            <p>Վերնագրի ատրիբուտի արժեքը կցուցադրվի որպես գործիքի հուշում, երբ մկնիկը անցնի թեգի վրայով՝</p>
+                            
+                            <div class="html-back">
+                                <h3>ՕՐԻՆԱԿ</h3>
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>p <a style="color: darkmagenta;">title</a><a style="color: darkgreen;">="ես պարագրաֆ եմ"</a><span>></span>Սա պարագրաֆ է<span><</span>/p<span>></span>
+                                    </p>
+                                </div>
+                                <a href="codetutu/ex7.html" target="_blank">
+                                    <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                                </a> 
+                            </div>
+                        </div>
+                        <br>
+                        <hr style="color: #fff;">
+
+                        <div class="html-summery">
+                            <h2>Գլխի Անփոփում</h2>
+                            <br>
+                            <ul>
+                                <li>Բոլոր HTML թեգերը կարող են ունենալ ատրիբուտներ</li>
+                                <li><span><</span>a<span>></span>-ի href ատրիբուտը նշում է այն էջի URL-ը, ուր գնում է հղումը</li>
+                                <li><span><</span>img<span>></span>-ի src ատրիբուտը նշում է ցուցադրվող պատկերի ուղին</li>
+                                <li><span><</span>img<span>></span>-ի width և height ատրիբուտները տրամադրում են պատկերների չափը</li>
+                                <li><span><</span>img<span>></span>-ի alt ատրիբուտը պատկերի համար նկարագրային տեքստ է տրամադրում</li>
+                                <li>Style ատրիբուտը օգտագործվում է թեգերին ոճեր ավելացնելու համար, ինչպիսիք են գույնը, տառատեսակը, չափը և այլն</li>
+                                <li><span><</span>html<span>></span> թեգի lang ատրիբուտը հայտարարում է վեբ էջի լեզուն</li>
+                                <li>Title ատրիբուտը սահմանում է որոշ լրացուցիչ տեղեկություններ թեգի մասին</li>
+                            </ul>
+                        </div>
+                        <br>
+                    <hr style="color: #fff; border: 3px solid #fff;">
+                    </div>
+                </section>
+                <br>
+                <section id="t4" class="html-heanding">
+                    <div class="container">
+                        <h1 style="color: #fff; font-family: Quivira;">HTML Վերնագրեր</h1>
+                        <br>
+                        <hr style="color: #fff;">
+                        <p style="color: #fff;">HTML վերնագրերը դրանք՝ վերնագրեր կամ ենթագրեր են, որոնք ցանկանում եք ցուցադրել վեբ էջում:</p>
+                        <hr style="color: #fff;">
+                        
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p >
+                                    <h1 style="margin-left: 10px;">Վերնագիր 1</h1>
+                                    <h2 style="margin-left: 10px;">Վերնագիր 2</h2>
+                                    <h3 style="margin-left: 10px;">Վերնագիր 3</h3>
+                                    <h4 style="margin-left: 10px; margin-top: -10px;">Վերնագիր 4</h4>
+                                    <h5 style="margin-left: 10px;">Վերնագիր 5</h5>
+                                    <h6 style="margin-left: 10px;">Վերնագիր 6</h6>
+                                </p>
+                            </div>
+                            <a href="codetutu/ex8.html" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <br>
+                        <hr style="color: #fff;">
+                        <div class="html-heanding-2">
+                            <h2 style="color: #fff;">HTML Վերնագրեր</h2>
+                            <br>
+                            <p style="color: #fff;">HTML վերնագրերը սահմանվում են <span><</span>h1<span>></span>-ից <span><</span>h6<span>></span> թեգերով:</p>
+                            <br>
+                            <p style="color: #fff;"><span><</span>h1<span>></span> սահմանում է ամենակարևոր վերնագիրը: <span><</span>h6<span>></span> սահմանում է ամենաքիչ կարևոր վերնագիրը:</p>
+                        
+                                <div class="html-back">
+                                    <h3>ՕՐԻՆԱԿ</h3>
+                                    <div class="code-doc">
+                                        <p>
+                                            <span><</span>h1<span>></span><a style="color: #000;">Վերնագիր</a><span><</span>/h1<span>></span><br>
+                                            <span><</span>h2<span>></span><a style="color: #000;">Վերնագիր</a><span><</span>/h2<span>></span><br>
+                                            <span><</span>h3<span>></span><a style="color: #000;">Վերնագիր</a><span><</span>/h3<span>></span><br>
+                                            <span><</span>h4<span>></span><a style="color: #000;">Վերնագիր</a><span><</span>/h4<span>></span><br>
+                                            <span><</span>h5<span>></span><a style="color: #000;">Վերնագիր</a><span><</span>/h5<span>></span><br>
+                                            <span><</span>h6<span>></span><a style="color: #000;">Վերնագիր</a><span><</span>/h6<span>></span><br>
+                                        </p>
+                                    </div>
+                                    <a href="codetutu/ex8.html" target="_blank">
+                                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                                    </a> 
+                                </div>
+                                <div class="note">
+                                    <p><b>Նշում:</b> Բրաուզերներն ավտոմատ կերպով ավելացնում են որոշ սպիտակ տարածություն (margin) վերնագրից առաջ և հետո:</p>
+                                </div>
+                        </div>
+                        <br>
+                        <hr style="color: #fff;">
+                        <br>
+                        <div class="html-hend-big">
+                            <h2 style="color: #fff;">Ավելի մեծ վերնագրեր</h2>
+                            <br>
+                            <p style="color: #fff;">Յուրաքանչյուր HTML վերնագիր ունի հիմնական չափս: 
+                                Այնուամենայնիվ, դուք կարող եք նշել ցանկացած վերնագրի չափը style հատկանիշով, 
+                                օգտագործելով CSS-ի font-size հատկությունը.</p>
+                            <div class="html-back">
+                                <h3>ՕՐԻՆԱԿ</h3>
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>h1 <a style="color: darkmagenta;">style</a><a style="color: green;">="font-size: 60px;"</a><span>></span><a style="color: #000;">Վերնագիր</a><span><</span>/h1<span>></span><br>
+                                    </p>
+                                </div>
+                                <a href="codetutu/ex9.html" target="_blank">
+                                    <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                                </a> 
+                            </div>
+                        </div>
+                        <br>
+                        <hr style="color: #fff; border: 3px solid #fff;">
+                    </div>
+                </section>
+                <section id="t5" class="html-paragraf">
+                    <div class="container">
+                    <h1 style="color: #fff; font-family: Quivira;">HTML Պարագրաֆ</h1>
+                    <br>
+                    <hr style="color: #fff;">
+                    <p style="color: #fff;">Պարբերությունը միշտ սկսվում է նոր տողից և օգտագործվում է որպես տեքստի բլոկ։</p>
+                    <hr style="color: #fff;">
+                    <br>
+
+                    <div class="hrml-parags">
+                        <h2 style="color: #fff;">HTML Պարագրաֆներ</h2>
+                        <br>
+                        <p style="color: #fff;">HTML <span><</span>p<span>></span> թեգը սահմանում է պարբերություն:</p>
+                        <p style="color: #fff;">Պարբերությունը միշտ սկսվում է նոր տողից, և բրաուզերներն ավտոմատ կերպով ավելացնում են որոշ սպիտակ տարածություն (margin) պարբերությունից առաջ և հետո:</p>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span><</span>p<span>></span><a style="color: #000;">Սա պարագրաֆ է</a><span><</span>/p<span>></span><br>
+                                    <span><</span>p<span>></span><a style="color: #000;">Սա ուրիշ պարագրաֆ է</a><span><</span>/p<span>></span><br>
+                                </p>
+                            </div>
+                            <a href="codetutu/ex10.html" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                    </div>
+                        <br>
+                        <hr style="color: #fff;">
+                        <br>
+                        <div class="html-par-display">
+                            <h2 style="color: #fff;">HTML Էկրան</h2>
+                            <br>
+                            <p style="color: #fff;">Դուք չեք կարող վստահ լինել, թե ինչպես կցուցադրվի HTML-ը:</p>
+                            <p style="color: #fff;">Մեծ կամ փոքր էկրանները և չափափոխված պատուհանները տարբեր արդյունքներ կստեղծեն:</p>
+                            <p style="color: #fff;">HTML-ով դուք չեք կարող փոխել էկրանը՝ ավելացնելով լրացուցիչ բացատներ կամ լրացուցիչ տողեր ձեր HTML կոդը:</p>
+                            <p style="color: #fff;">Բրաուզերը ավտոմատ կերպով կհեռացնի լրացուցիչ բացատները և տողերը, երբ էջը ցուցադրվի.</p>
+                            <div class="html-back">
+                                <h3>ՕՐԻՆԱԿ</h3>
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>p<span>></span><a style="color: #000;"><br>
+                                            Այս պարբերությունը<br>
+                                            պարունակում է շատ տողեր<br>
+                                            բայց բրաուզերը<br>
+                                            անտեսում է այն:<br></a><span><</span>/p<span>></span><br>
+                                            <br>
+                                            <span><</span>p<span>></span><a style="color: #000;"><br>
+                                                Այս պարբերությունը<br>
+                                                պարունակում է <a style="margin-left: 30px; color: #000;">շատ բացատներ</a><br>
+                                                <a style="color: #000;">բայց</a> <a style="margin-left: 40px; color: #000;">բրաուզերը</a><br>
+                                                <a style="margin-left: 20px; color: #000;">անտեսում է</a> <a style="color: #000;">այն:</a><br></a><span><</span>/p<span>></span><br>   
+                                    </p>
+                                </div>
+                                <a href="codetutu/ex11.html" target="_blank">
+                                    <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                                </a> 
+                            </div>
+                        </div>
+                        <br>
+                        <hr style="color: #fff;">
+                        <br>
+                        <div class="html-hoizonal-rul">
+                            <h2 style="color: #fff;">HTML Հորիզոնական գիծ</h2>
+                            <br>
+                            <p style="color: #fff;"><span><</span>hr> թեգը սահմանում է թեմատիկ ընդմիջում HTML էջի մեջ և ամենից հաճախ ցուցադրվում է որպես հորիզոնական գիծ։</p>
+                            <p style="color: #fff;"><span><</span>hr> թեգն օգտագործվում է HTML էջի բովանդակությունը առանձնացնելու (կամ փոփոխություն սահմանելու համար).</p>
+                        
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span><</span>h1<span>></span><a style="color: #000;">Վերնագիր 1</a><span><</span>/h1<span>></span><br>
+                                    <span><</span>p<span>></span><a style="color: #000;">Ինչ որ մի տեքստ</a><span><</span>/p<span>></span><br>
+                                    <span><</span>hr<span>></span><br>
+                                    <span><</span>h1<span>></span><a style="color: #000;">Վերնագիր 2</a><span><</span>/h1<span>></span><br>
+                                    <span><</span>p<span>></span><a style="color: #000;">Ինչ որ մի տեքստ</a><span><</span>/p<span>></span><br>
+                                    <span><</span>hr<span>></span>
+                                </p>
+                            </div>
+                            <a href="codetutu/ex12.html" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <br>
+                        <p style="color: #fff;"><span><</span>hr<span>></span> թեգը դատարկ թեգ է, ինչը նշանակում է, որ այն չունի վերջի թեգ:</p>
+                        </div>
+                        <hr style="color: #fff;">
+                        <br>
+                        <div class="html-br">
+                            <h2 style="color: #fff;">HTML Նոր տող</h2>
+                            <br>
+                            <p style="color: #fff;">Օգտագործեք <span><</span>br>, եթե ցանկանում եք տողերի ընդմիջում (նոր տող) առանց նոր պարբերություն սկսելու.</p>
+                            <div class="html-back">
+                                <h3>ՕՐԻՆԱԿ</h3>
+                                <div class="code-doc">
+                                    <p>
+                                        <span><</span>p<span>></span><a style="color: #000;">Ինչ <span><</span><i style="color: indianred;">br</i><span>></span> որ մի <span><</span><i style="color: indianred;">br</i><span>></span> տեքստ</a><span><</span>/p<span>></span><br>
+                                    </p>
+                                </div>
+                                <a href="codetutu/ex13.html" target="_blank">
+                                    <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                                </a> 
+                            </div>
+                        </div>
+                        <br>
+                        <p style="color: #fff;"><span><</span>br<span>></span> թեգը դատարկ թեգ է, ինչը նշանակում է, որ այն չունի վերջի թեգ:</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- <footer class="foot">
+            <div class="contenier">
+                <div class="content-02">
+                    <img src="img/logos/logowhite.png" alt="Logo">
+                <div class="ul">
+                    <ul>
+                        <h3>Մենյու</h3>
+                        <li><a href="">Գլխավոր</a></li>
+                        <li><a href="">Դասեր</a></li>
+                        <li><a href="">Մասին</a></li>
+                        <li><a href="">Կապ</a></li>
+                    </ul>
+                    <ul>
+                        <h3>Դասեր</h3>
+                        <li><a href="">Html</a></li>
+                        <li><a href="">Css</a></li>
+                        <li><a href="">Js</a></li>
+                        <li><a href="">Bootstrap</a></li>
+                    </ul>
+                    <ul>
+                        <h3>Մասին</h3>
+                        <li><a href="">Կայքի Մասին</a></li>
+                        <li><a href="">Ստեղծողի Մասին</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </footer> -->
+      </div>
+      
+      <script type="text/javascript">
+          const menu = document.querySelector(".menu");
+            window.onscroll = ()=>{
+            this.scrollY > 20 ? menu.classList.add("sticky") : menu.classList.remove("sticky");
+            }
+
+            const li=document.querySelectorAll(".links");
+            const sec=document.querySelectorAll("section");
+
+            function activeMenu(){
+                let len=sec.length;
+                while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+                li.forEach(ltx => ltx.classList.remove("active"));
+                li[len].classList.add("active");
+            }
+            activeMenu();
+            window.addEventListener("scroll", activeMenu);
+
+      </script>
+</body>
+</html>

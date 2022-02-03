@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Corleone';
+    src: url('fonts/Corleone.woff2') format('woff2'),
+        url('fonts/Corleone.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@media (max-width: 425px) {
+    .mobile-menu{
+        display: block;
+        position: fixed;
+        top: 25px;
+        right: 20px;
+        z-index: 30;
+    }
+    .mobile-logo img{
+        width: 50px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .mobile-logo{
+        background-color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.41);
+        z-index: 0;
+    }
+    .mobile-logo p{
+        font-size: 12px;
+        text-align: center;
+        font-family: Corleone;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .hiden-menu{
+        position: absolute;
+        width: 70px;
+        height: 300px;
+        color: rgb(0, 1, 41);
+        background-color: #fff;
+        margin-top: -35px;
+        z-index: -1;
+        border-radius: 0 0 50px 50px;
+        display: none;
+        box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.41);
+      }
+    .hiden-menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+      }
+    .hiden-menu a i{
+        color: rgb(0, 1, 41);
+        line-height: 10px;
+    }
+    
+    .menu-item{
+        text-align: center;
+        margin-left: -5px;
+        padding-top: 50px;
+    }
+    .menu-item #hm{
+        margin-left: -10px;
+    }
+    .menu-item .i{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .menu-item hr{
+        width: 70px;
+        margin-left: 5px;
+    }
+    .menu-item li{
+        list-style: none;
+    }
+    .menu-item li .active{
+        text-decoration: underline;
+    }
+}

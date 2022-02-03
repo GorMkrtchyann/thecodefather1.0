@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'Quivira';
+    src:url('fonts/Quivira.woff') format('woff'),
+      url('fonts/Quivira.woff2') format('woff2'),
+      url('fonts/Quivira.svg#Quivira') format('svg'),
+      url('fonts/Quivira.eot'),
+      url('fonts/Quivira.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Quivira.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Corleone';
+    src: url('fonts/Corleone.woff2') format('woff2'),
+        url('fonts/Corleone.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #008aff, #00ffe7);
+  border-radius: 6px;
+  height: 150px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(#008aff, #00ffe7);
+}
+/* #scrollPath{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  
+}
+
+#progressbar:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+#progressbar:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+} */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 1, 41);
+}
+
+.body{
+  overflow: hidden;
+}
+.home-button{
+  margin-left: 90%;
+  margin-top: 50px;
+  position: fixed;
+  z-index: 2;
+}
+.home-button i{
+  color: #000;
+  background-color: #fff;
+  font-size: 30px;
+  padding: 15px 17px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.3); 
+  box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.3);
+}
+.home-button i:hover{
+  background-color: #000;
+  color: #fff;
+}
+nav{
+    z-index: 1;
+    position: fixed;
+    top: 9%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.logo img{
+    width: 100px;
+    margin-right: 60px;
+}
+.menu i, .menu ul br{
+  display: none;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu ul li{
+    list-style: none;
+    margin-right: 60px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Quivira;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 50px;
+    transition: all 0.4s ease;
+}
+.menu ul li a:hover, .active{
+    text-decoration: underline;
+}
+.menu{
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px 50px 10px 50px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    width: 1200px;
+}
+
+.bode{
+  display: flex;
+  
+}
+.html-c1{
+  margin-top: 8%;
+  margin-left: 30px;
+  width: 80%;
+}
+
+.html-menu{
+  width: 20%;
+  height: 4000vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+.html-ul{
+  position: fixed;
+  margin-top: 8%;
+  width: 264px;
+}
+.html-ul h3{
+  color: rgb(0, 1, 41);
+  background-color: #fff;
+}
+.html-ul li{
+  list-style: none;
+  margin-top: 20px;
+  width: 273px;
+}
+.html-ul a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: Quivira;
+}
+.html-ul a:hover{
+  text-decoration: underline;
+}
+.html-menu .active{
+  border: 2px solid #fff;
+  padding: 3px 7px 3px 7px;
+  width: 200px;
+}
+.html-c1 .title h1{
+  color: #fff;
+  font-family: Quivira;
+  text-decoration: underline;
+}
+
+.hr{
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.what-html{
+  color: #fff;
+}
+.what-html h2{
+  font-family: Quivira;
+}
+.html-doc{
+  color: #fff;
+  margin-top: 40px;
+}
+.html-doc h2{
+  font-family: Quivira;
+}
+.html-back{
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 7px;
+}
+.html-back h3{
+  color: #000;
+  margin-bottom: 20px;
+}
+.code-doc span{
+  color: blue;
+}
+.code-doc p{
+  color: brown;
+  padding: 10px;
+}
+.code-doc{
+  background-color: #fff;
+  border-left: 5px solid rgb(0, 1, 41);
+}
+.html-back button{
+  background: rgb(0, 1, 41);
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  border-color: rgb(0, 1, 41);
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+.html-back button:hover{
+  background: #fff;
+  color: rgb(0, 1, 41);
+}
+.html-end a{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.html-end{
+  margin-top: 45px;
+}
+.html-end h2{
+  margin-bottom: 25px;
+}
+.html-el{
+  color: #fff;
+  margin-top: 50px;
+}
+.html-el h2{
+  font-family: Quivira;
+  margin-bottom: 30px;
+}
+.html-tab table{
+  width: 700px;
+  margin-top: 50px;
+}
+.html-tab td, th {
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.note{
+  background-color: khaki;
+  width: 800px;
+  color: black;
+  padding: 10px 10px 3px 10px;
+  margin-top: 50px;
+  margin-left: -25px;
+}
+.html-web h2{
+  color: #fff;
+  font-family: Quivira;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.html-web p{
+  color: #fff;
+}
+.html-basic{
+  color: #fff;
+  margin-top: 50px;
+}
+.html-basic h1{
+  font-family: Quivira;
+}
+.html-atri{
+  color: #fff;
+  margin-top: 50px;
+}
+.html-atri h1{
+  font-family: Quivira;
+}
+.html-atributs li {
+  margin-top: 10px;
+}
+
+
+/* .foot img{
+    width: 150px;
+}
+.foot a{
+    color: white;
+    text-decoration: none;
+}
+.foot li{
+    list-style: none;
+    margin-top: 10px;
+}
+.content-02{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0 50px 0;
+}
+.ul{
+    display: flex;
+}
+.ul ul{
+    margin-left: 80px;
+}
+.foot h3{
+    color: white;
+    text-decoration: underline;
+    font-family: Quivira;
+}
+.foot{
+    background-color: rgba(0, 0, 0, 0.3);
+} */
+
+@media (max-width: 768px) {
+    .menu{
+      width: 100%;
+      position: sticky;
+      bottom: 0;
+    }
+  
+    nav{
+      position: fixed;
+    }
+
+  }
+  @media (max-width: 425px){
+    .menu i, .menu ul br{
+      display: block;
+    }
+    
+    .menu{
+      width: 425px;
+    }
+    .menu ul li a{
+        letter-spacing: 2px;
+        font-size: 10px;
+        margin-top: 50px;
+        transition: all 0.4s ease;
+    }
+    .menu ul li i{
+      font-size: 27px;
+      margin-bottom: -25px;
+    }
+    .menu ul li{
+        margin-right: 15px;
+    }
+    .logo img{
+      width: 70px;
+      margin-right: 15px
+    }
+    .menu ul li a:hover, .active{
+        text-decoration: none;
+    }
+    .menu ul{
+      margin-left: -10px
+    }
+    nav{
+      top: 8%;
+    }
+  }
+  @media (max-width: 375px){
+    .menu{
+      width: 375px;
+    }
+    .menu ul li a{
+        letter-spacing: 2px;
+        font-size: 10px;
+        margin-top: 50px;
+        transition: all 0.4s ease;
+    }
+    .menu ul li i{
+      font-size: 27px;
+    }
+    .menu ul li{
+        margin-right: 15px;
+    }
+    .logo img{
+      width: 70px;
+      margin-right: 15px
+    }
+    .menu ul li a:hover, .active{
+        text-decoration: none;
+    }
+    .menu ul{
+      margin-left: -10px
+    }
+    nav{
+      top: 8%;
+    }
+  }
+  @media (max-width: 320px){
+    .menu{
+      width: 320px;
+    }
+    .menu ul li a{
+        letter-spacing: 2px;
+        font-size: 10px;
+        margin-top: 50px;
+        transition: all 0.4s ease;
+    }
+    .menu ul li i{
+      font-size: 25px;
+    }
+    .menu ul li{
+        margin-right: 10px;
+    }
+    .logo img{
+      width: 60px;
+      margin-right: 10px
+    }
+    .menu ul li a:hover, .active{
+        text-decoration: none;
+    }
+    .menu ul{
+      margin-left: -10px
+    }
+    nav{
+      top: 8%;
+    }
+  }
+  
